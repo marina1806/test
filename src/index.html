@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/vendor/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Test</title>
+</head>
+<body>
+   <div class="wrapperBig">
+       <div class="wrapperForm">
+           <div class="wrapperForm__banner">
+               <h2>Sign up</h2>
+           </div>
+           <div class="wrapperForm__form">
+                <object id="my-svg-icon" type="image/svg+xml" data="../src/img/svg/Shape.svg"></object>
+                <p class="wrapperForm__title">
+                    New user?
+                </p>
+                <p class="wrapperForm__title_small">Use the form below to create your account.</p>
+                <form id="form" action="#" method="POST">
+                    <div class="inputRow">
+                        <fieldset class="animated fadeInUp">
+                            <label for="firstName">First Name</label>
+                            <input id="firstName" type="text" name="firstName" minlength="3" required >
+                        </fieldset>
+                        <fieldset class="animated fadeInUp delay-1s">           
+                            <label for="lastName">Last Name</label>
+                            <input id="lastName" type="text" name="lastName" minlength="3" required >
+                        </fieldset>
+                   </div>
+                    <div class="inputRow">
+                        <fieldset class= "inputRow__arrow animated fadeInUp delay-2s">
+                        <label for="nationality">Nationality</label>
+                            <select id="nationality" name="nationality">
+                                <option value="American">American</option> 
+                                <option value="Russian">Russian</option> 
+                                <option value="Polish">Polish</option> 
+                            </select> 
+                        </fieldset>  
+                        <fieldset class="animated fadeInUp delay-3s">
+                            <label for="email">E-mail</label>
+                            <input id="email" type="email" name="email"  required >
+                        </fieldset>
+                    </div>
+                    <div class="inputRow">
+                        <fieldset class="animated fadeInUp delay-4s">
+                            <legend>Date of Birth</legend> 
+                            <span class= "inputRow__arrow inputRow__arrow_small"><select id = "days"></select></span>
+                            <span class= "inputRow__arrow inputRow__arrow_small"><select id = "months"></select></span>
+                            <span class= "inputRow__arrow inputRow__arrow_small"><select id = "years"></select></span>
+                        </fieldset>
+                        <fieldset class="animated fadeInUp delay-5s">
+                            <legend>Gender</legend>
+                            <div class="genderBlock">
+                                <input class="genderBlock__radio" type="radio" name="sex" value="male" id="male"> 
+                                <label class="genderBlock__label" for="male">Male</label>
+                                <input class="genderBlock__radio" type="radio" name="sex" value="female" id="female">  
+                                <label class="genderBlock__label" for="female">Female</label>       
+                            </div>
+                        </fieldset>
+                    </div>              
+                    <div class="inputRow">
+                        <fieldset class="animated fadeInUp delay-5s">
+                            <label for="password" >Password</label>
+                            <input id="password" type="password" name="password" maxlength="100" minlength="8">
+                        </fieldset>
+                        <fieldset class="animated fadeInUp delay-5s">
+                            <label for="passwordConfirm">Confirm Password</label>
+                            <input id="passwordConfirm" type="password" name="passwordConfirm" maxlength="100" minlength="8">
+                        </fieldset>                    
+                    </div>
+                    <div class="bottomBlock">
+                        <div class="bottomBlock__question">
+                            <span>Have an account? </span>
+                            <a href="#">Log in</a>
+                        </div>
+                        <button class="bottomBlock__button" type="submit" >Complete Signup</button>
+                    </div> 
+                </form> 
+           </div>
+       </div>
+   </div> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.5/vivus.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script src="../src/js/validation.js"></script>
+<script src="../src/js/app.js"></script> 
+</body>
+</html>

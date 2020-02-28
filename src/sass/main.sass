@@ -1,0 +1,132 @@
+@import 'style'
+.wrapperBig
+    width: 100%
+    height: 100vh
+    display: flex    
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    .wrapperForm
+        width: 800px
+        height: 600px
+        background-color: #f4f5fc
+        padding: 60.48px 67px 59.52px 68px
+        display: flex
+        flex-direction: row
+        &__banner
+            width: 137.2px
+            height: 100%
+            background-color:#5A61ED
+            color:#FFFFFF
+            font-family: 'PT Sans', sans-serif
+            position: relative
+            h2 
+                font-size: 49px;
+                line-height: 63px;
+                letter-spacing: 0.5px;
+                font-weight: 400
+                transform: rotate(-90deg)
+                position: absolute
+                bottom: 73.98px
+                right: -45.3px
+        &__form
+            background-color: #FFFFFF
+            height: 100%
+            width: 527.8px
+            font-family: 'Work Sans', sans-serif
+            position: relative
+            padding: 38.52px 22.5px 43.48px 20.8px
+            color: #111111!important
+            font-style: normal
+            #my-svg-icon
+                position: absolute
+                bottom: 0
+                right: 0
+                z-index: 0
+            form
+                position: relative
+                z-index: 1
+                margin-top: 20px
+                .inputRow
+                    display: flex
+                    justify-content: space-between
+                    margin-bottom: 17.18px
+                    &__arrow
+                        position: relative
+                        &::after
+                            content: ''
+                            background: url(../img/svg/arrow.svg)
+                            position: absolute
+                            right: -1px;
+                            top: 25px;
+                            z-index: 5
+                            display: inline-block
+                            height: 4px
+                            width: 8px
+                        &_small
+                            &::after
+                                right: 0px;
+                                top: 12px;              
+                fieldset
+                    border: none
+                    flex-basis: 48%
+                    position: relative
+                    label
+                        font-weight: 300
+                        font-size: 12px
+                        line-height: 14px
+                        color: #7C7C7C
+                        display: block
+                    input, select
+                        border: none
+                        border-bottom: 0.7px solid #F2F2F2
+                        outline: none
+                        width: 234.5px
+                        background: transparent
+                        font-size: 14px
+                        color: #111111
+                        font-family: 'Work Sans', sans-serif
+                        padding-bottom: 8px
+                        &:-webkit-autofill 
+                            -webkit-box-shadow: inset 0 0 0 50px #fff !important
+                            -webkit-text-fill-color: #111111 !important
+                            color: #111111 !important
+                    input[type=radio]
+                        width: auto
+                    input.error
+                        color: #FF2222!important
+                        border-bottom: 0.7px solid #FF2222
+                    label.error
+                        position: absolute
+                        color: #FF2222!important
+                    select
+                        -webkit-appearance: none
+                        position: relative
+                    legend
+                        color: #7C7C7C
+                        font-weight: 300
+                        font-size: 12px
+                        line-height: 14px
+                    #days
+                        width: 56px
+                    #months
+                        width: 91px
+                    #years
+                        width: 67.67px
+                    .genderBlock
+                        display: flex
+                        justify-content: space-between
+                        margin-top: 6px
+                        width: 123px
+        &__title
+            font-weight: 500
+            font-size: 22px
+            line-height: 26px  
+            letter-spacing: -0.46px 
+            &_small
+                font-weight: 300
+                font-size: 14px
+                line-height: 16px 
+@import 'radiobutton'
+@import 'bottom'
+

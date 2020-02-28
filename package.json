@@ -1,0 +1,31 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "Test task completed by Maria Schastnaya",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marina1806/test.git"
+  },
+  "author": "Maria Schastnaya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marina1806/test/issues"
+  },
+  "homepage": "https://github.com/marina1806/test#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "animate.css": "^3.7.2",
+    "vivus": "^0.4.5"
+  }
+}

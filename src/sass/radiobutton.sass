@@ -1,0 +1,31 @@
+input.genderBlock__radio 
+	position: absolute
+	z-index: -1
+	opacity: 0
+	margin: 0    
+input.genderBlock__radio + label 
+	position: relative
+	padding: 0 0 0 18px
+	cursor: pointer
+input.genderBlock__radio + label:before 
+	content: ''
+	position: absolute
+	top: 0px
+	left: 0
+	width: 12px
+	height: 12px
+	border: 0.7px solid #5A61ED
+	border-radius: 6.3px
+	background: #FFF
+input.genderBlock__radio + label:after 
+	content: ''
+	position: absolute
+	top: 3px
+	left: 4px
+	width: 6px
+	height: 6px
+	border-radius: 6.3px
+	background: #5A61ED
+	opacity: 0
+input.genderBlock__radio:checked + label:after 
+	opacity: 1
